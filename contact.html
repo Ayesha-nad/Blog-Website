@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Contact &amp; Inquiries — Lumen. Digital Magazine</title>
+  <meta name="description" content="Connect with the editorial team at Lumen for creative collaborations, story pitches, reader feedback, or general correspondence.">
+  <meta name="keywords" content="contact editorial, story pitch, design collaborations, magazine inquiry, digital publication">
+  <meta name="author" content="Lumen Editorial">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Google Fonts: Instrument Serif (Headings) & Plus Jakarta Sans (Body & UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- ONE Shared Stylesheet (Strict Technical Rule 2) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       SHARED SITE HEADER
+       Identical markup on all 3 pages (Strict Technical Rule 6).
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      
+      <!-- Brand Logo in Serif with Gradient Period -->
+      <a href="index.html" class="brand-logo" aria-label="Lumen - Return to homepage">
+        Lumen<span class="brand-logo__dot">.</span>
+      </a>
+
+      <!-- CSS-Only Mobile Menu Checkbox + Label (Technical Rule 8) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open or close navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <!-- Main Navigation Menu -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a href="index.html" class="site-nav__link">Home</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="blog.html" class="site-nav__link">Blog</a>
+          </li>
+          <li class="site-nav__item">
+            <!-- Active indicator on Contact page (Technical Rule 7) -->
+            <a href="contact.html" class="site-nav__link active" aria-current="page">Contact</a>
+          </li>
+        </ul>
+        <div class="site-nav__action">
+          <a href="contact.html" class="btn btn--primary btn--sm">Subscribe</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN CONTENT CONTAINER
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- ------------------------------------------------------------------
+         1. EDITORIAL CONTACT HEADER
+         ------------------------------------------------------------------ -->
+    <section class="page-header" aria-labelledby="contact-page-title">
+      <!-- Atmospheric Aurora Glow -->
+      <div class="aurora-glow" aria-hidden="true">
+        <div class="aurora-orb aurora-orb--indigo"></div>
+        <div class="aurora-orb aurora-orb--amber"></div>
+      </div>
+
+      <div class="container">
+        <div class="page-header__inner">
+          <span class="label-caps">Inquiries &amp; Dispatches</span>
+          <!-- Single <h1> per page for semantic hierarchy -->
+          <h1 id="contact-page-title">
+            Start a dialogue with our <span class="text-gradient"><span class="serif-italic">editorial</span></span> team.
+          </h1>
+          <p class="page-header__desc">
+            Whether you have a thoughtful question regarding an essay, wish to pitch a story, or would like to collaborate on an upcoming project.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         2. TWO-COLUMN CONTACT LAYOUT
+         Desktop: Left Column Dark Details Card • Right Column Form Card.
+         Mobile: Fluidly stacked vertically.
+         ------------------------------------------------------------------ -->
+    <section class="section" aria-label="Contact channels and message form">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- ==============================================================
+               LEFT COLUMN: DARK INK DETAILS CARD
+               ============================================================== -->
+          <aside class="contact-details-card" aria-label="Editorial studio details">
+            <span class="label-caps label-caps--pink">Direct Channels</span>
+            <h2>We read every single letter.</h2>
+            <p>
+              Our editorial desk is based in New York. We appreciate thoughtful correspondence and reply to reader inquiries within one to two business days.
+            </p>
+
+            <ul class="contact-info-list">
+              
+              <!-- Email -->
+              <li class="contact-info-item">
+                <div class="icon-chip" aria-hidden="true">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="contact-info-content">
+                  <h4>Email Dispatch</h4>
+                  <p><a href="mailto:hello@lumenmagazine.com">hello@lumenmagazine.com</a></p>
+                </div>
+              </li>
+
+              <!-- Phone -->
+              <li class="contact-info-item">
+                <div class="icon-chip" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-info-content">
+                  <h4>Telephone</h4>
+                  <p><a href="tel:+15552348901">+1 (555) 234-8901</a></p>
+                </div>
+              </li>
+
+              <!-- Studio Location -->
+              <li class="contact-info-item">
+                <div class="icon-chip" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-info-content">
+                  <h4>Studio Desk</h4>
+                  <p>Studio 402, 184 Franklin St, New York, NY 10013</p>
+                </div>
+              </li>
+
+              <!-- Operating Hours -->
+              <li class="contact-info-item">
+                <div class="icon-chip" aria-hidden="true">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="contact-info-content">
+                  <h4>Hours</h4>
+                  <p>Monday – Friday: 9:00 AM – 6:00 PM EST</p>
+                </div>
+              </li>
+
+            </ul>
+
+            <!-- Floating Paper Plane Decor -->
+            <div class="plane-decor" aria-hidden="true">
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </aside>
+
+          <!-- ==============================================================
+               RIGHT COLUMN: WHITE INTERACTIVE FORM CARD
+               ============================================================== -->
+          <section class="contact-form-card" aria-label="Send us an editorial message">
+            
+            <header class="section-header section-header--form">
+              <span class="label-caps">Message Desk</span>
+              <h2>Send an editorial message</h2>
+              <p>
+                Please provide your contact details below. Our inputs feature pure CSS floating labels, focus illumination, and validation states.
+              </p>
+            </header>
+
+            <form action="#" method="get" class="contact-form" novalidate>
+              
+              <!-- Name Input (Floating Label) -->
+              <div class="form-group">
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder=" " 
+                  required 
+                  autocomplete="name">
+                <label for="contact-name" class="form-label">
+                  Your Full Name
+                </label>
+              </div>
+
+              <!-- Email Input (Floating Label) -->
+              <div class="form-group">
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder=" " 
+                  required 
+                  autocomplete="email">
+                <label for="contact-email" class="form-label">
+                  Your Email Address
+                </label>
+              </div>
+
+              <!-- Subject Dropdown -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label-static">
+                  Subject / Inquiry Type
+                </label>
+                <select id="contact-subject" name="subject" class="form-select" required>
+                  <option value="" disabled selected>Please select an inquiry topic...</option>
+                  <option value="story-pitch">Story Pitch &amp; Guest Writing</option>
+                  <option value="collaboration">Design Partnership &amp; Collaboration</option>
+                  <option value="press">Press &amp; Media Inquiries</option>
+                  <option value="general">General Feedback &amp; Greetings</option>
+                </select>
+              </div>
+
+              <!-- Message Input (Floating Label Textarea) -->
+              <div class="form-group">
+                <textarea 
+                  id="contact-message" 
+                  name="message" 
+                  rows="5" 
+                  class="form-textarea" 
+                  placeholder=" " 
+                  required></textarea>
+                <label for="contact-message" class="form-label">
+                  Your Message or Story Pitch...
+                </label>
+              </div>
+
+              <!-- Submit Button -->
+              <div>
+                <button type="submit" class="btn btn--primary btn--submit">
+                  <span>Send Message</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+
+            </form>
+
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SHARED SITE FOOTER
+       Identical markup on all 3 pages (Strict Technical Rule 6).
+       ====================================================================== -->
+  <footer class="site-footer">
+    
+    <!-- Soft Wave SVG Divider at Top of Footer -->
+    <div class="footer-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,32L60,42.7C120,53,240,75,360,74.7C480,75,600,53,720,42.7C840,32,960,32,1080,42.7C1200,53,1320,75,1380,85.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      </svg>
+    </div>
+
+    <div class="container site-footer__inner">
+      <div class="site-footer__grid">
+        
+        <!-- Col 1: Brand & Editorial Statement -->
+        <div class="footer-col footer-col--brand">
+          <a href="index.html" class="brand-logo footer-brand" aria-label="Lumen - Return to homepage">
+            Lumen<span class="brand-logo__dot">.</span>
+          </a>
+          <p class="footer-tagline">
+            An independent digital publication dedicated to refined visual design, modern front-end craftsmanship, and intentional living.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col footer-col--links">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Social & Communities -->
+        <div class="footer-col footer-col--social">
+          <h4 class="footer-heading">Connect</h4>
+          <p class="footer-social-text">
+            Follow our design experiments and weekly essays:
+          </p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X Twitter">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar: Copyright & Asset Credits -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Lumen. All rights reserved. Handcrafted with semantic HTML5 &amp; pure CSS3.
+        </p>
+        <p>
+          Typography: <a href="https://fonts.google.com/specimen/Instrument+Serif" target="_blank" rel="noopener noreferrer">Instrument Serif</a> &amp; <a href="https://fonts.google.com/specimen/Plus+Jakarta+Sans" target="_blank" rel="noopener noreferrer">Plus Jakarta Sans</a> | Icons: <a href="https://fontawesome.com" target="_blank" rel="noopener noreferrer">Font Awesome 6</a> | Photography: Editorial Studio &amp; Unsplash.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

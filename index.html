@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Lumen. — A Journal for Curious Minds</title>
+  <meta name="description" content="A modern digital publication exploring the intersections of refined design, front-end architecture, slow travel, and intentional living.">
+  <meta name="keywords" content="digital magazine, design journal, creative writing, modern CSS, mindful living">
+  <meta name="author" content="Lumen Editorial">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Google Fonts: Instrument Serif (Headings) & Plus Jakarta Sans (Body & UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- ONE Shared Stylesheet (Strict Technical Rule 2) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       SHARED SITE HEADER
+       Identical markup on all 3 pages (Strict Technical Rule 6).
+       Contains brand text logo with gradient dot, mobile hamburger toggle,
+       desktop navigation, and subscribe pill button.
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      
+      <!-- Brand Logo in Serif with Gradient Period -->
+      <a href="index.html" class="brand-logo" aria-label="Lumen - Return to homepage">
+        Lumen<span class="brand-logo__dot">.</span>
+      </a>
+
+      <!-- CSS-Only Mobile Menu Checkbox + Label (Technical Rule 8) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open or close navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <!-- Main Navigation Menu -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <!-- Active indicator on Home page (Technical Rule 7) -->
+            <a href="index.html" class="site-nav__link active" aria-current="page">Home</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="blog.html" class="site-nav__link">Blog</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="contact.html" class="site-nav__link">Contact</a>
+          </li>
+        </ul>
+        <div class="site-nav__action">
+          <a href="contact.html" class="btn btn--primary btn--sm">Subscribe</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN CONTENT CONTAINER
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- ------------------------------------------------------------------
+         1. HERO SECTION
+         Two-column layout, atmospheric aurora glow, subtle dotted grid,
+         floating glass stat cards, and staggered entry reveal.
+         ------------------------------------------------------------------ -->
+    <section class="hero-section" aria-label="Editorial introduction and hero showcase">
+      <!-- Atmospheric Aurora Blurred Glow Orbs -->
+      <div class="aurora-glow" aria-hidden="true">
+        <div class="aurora-orb aurora-orb--indigo"></div>
+        <div class="aurora-orb aurora-orb--pink"></div>
+        <div class="aurora-orb aurora-orb--amber"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Content -->
+          <div class="hero__content">
+            <span class="label-caps hero__label reveal-1">A Journal for Curious Minds</span>
+            
+            <!-- Single <h1> per page for semantic hierarchy -->
+            <h1 class="hero__title reveal-2">
+              Thoughts on modern design, craft &amp; <span class="text-gradient"><span class="serif-italic">curious</span></span> living.
+            </h1>
+
+            <p class="hero__desc reveal-3">
+              Lumen is an independent publication exploring the intersection of intentional digital craftsmanship, human-scale technology, and the quiet beauty of slow travel.
+            </p>
+
+            <div class="hero__actions reveal-4">
+              <a href="blog.html" class="btn btn--primary">
+                <span>Read the Blog</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="contact.html" class="btn btn--secondary">
+                <span>Get in Touch</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Media with Floating Frosted-Glass Stat Cards -->
+          <div class="hero__media reveal-5">
+            <div class="hero__frame">
+              <img src="images/hero.jpg" alt="A bright creative studio workspace with laptop, coffee mug, notebook, and potted plant in natural daylight" class="hero__image" width="800" height="600" loading="eager">
+            </div>
+
+            <!-- Floating Glass Card 1 -->
+            <div class="glass-badge glass-badge--top">
+              <div class="glass-badge__icon" aria-hidden="true">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div class="glass-badge__text">
+                <strong>14,000+</strong> Avid Readers
+              </div>
+            </div>
+
+            <!-- Floating Glass Card 2 -->
+            <div class="glass-badge glass-badge--bottom">
+              <div class="glass-badge__icon" aria-hidden="true">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <div class="glass-badge__text">
+                <strong>4 Curated</strong> Longform Essays
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         2. INFINITE MARQUEE STRIP
+         Outlined serif typography gliding continuously. Pauses on hover.
+         ------------------------------------------------------------------ -->
+    <div class="marquee-section" aria-label="Editorial topics ticker">
+      <div class="marquee-track" aria-hidden="true">
+        <!-- First instance -->
+        <div class="marquee-content">
+          <span>Design <span class="marquee-slash">/</span></span>
+          <span>Slow Travel <span class="marquee-slash">/</span></span>
+          <span>Modern Web <span class="marquee-slash">/</span></span>
+          <span>Culture <span class="marquee-slash">/</span></span>
+          <span>Craftsmanship <span class="marquee-slash">/</span></span>
+          <span>Typography <span class="marquee-slash">/</span></span>
+        </div>
+        <!-- Duplicate instance for seamless infinite scrolling loop -->
+        <div class="marquee-content">
+          <span>Design <span class="marquee-slash">/</span></span>
+          <span>Slow Travel <span class="marquee-slash">/</span></span>
+          <span>Modern Web <span class="marquee-slash">/</span></span>
+          <span>Culture <span class="marquee-slash">/</span></span>
+          <span>Craftsmanship <span class="marquee-slash">/</span></span>
+          <span>Typography <span class="marquee-slash">/</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------
+         3. WHY READ US (FEATURE TILES)
+         3 feature cards numbered 01, 02, 03 in Instrument Serif.
+         ------------------------------------------------------------------ -->
+    <section class="section" aria-labelledby="why-read-heading">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="label-caps">Editorial Vision</span>
+          <h2 id="why-read-heading">Why we write &amp; what you will discover.</h2>
+          <p>
+            In an era of relentless algorithmic noise, we slow down to examine what makes creative work memorable, durable, and genuinely meaningful.
+          </p>
+        </header>
+
+        <div class="features-grid">
+          
+          <!-- Feature 01 -->
+          <article class="feature-card">
+            <div class="feature-card__number" aria-hidden="true">01</div>
+            <h3 class="feature-card__title">Deep Stories</h3>
+            <p>
+              Longform explorations into creative psychology, design history, and the deliberate habits of world-class makers.
+            </p>
+          </article>
+
+          <!-- Feature 02 -->
+          <article class="feature-card">
+            <div class="feature-card__number" aria-hidden="true">02</div>
+            <h3 class="feature-card__title">Practical Guides</h3>
+            <p>
+              Clear, step-by-step breakdowns of modern pure CSS techniques, architectural patterns, and tactile workspace design.
+            </p>
+          </article>
+
+          <!-- Feature 03 -->
+          <article class="feature-card">
+            <div class="feature-card__number" aria-hidden="true">03</div>
+            <h3 class="feature-card__title">Curated Inspiration</h3>
+            <p>
+              Hand-selected color pairings, typography specimens, and field dispatches from inspiring coffee shops around the globe.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ------------------------------------------------------------------
+         4. LATEST STORIES TEASER
+         Compact preview cards linking to blog.html.
+         ------------------------------------------------------------------ -->
+    <section class="section" aria-labelledby="latest-stories-heading">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="label-caps">From The Archive</span>
+          <h2 id="latest-stories-heading">Latest essays &amp; reflections.</h2>
+          <p>
+            A quick glimpse into our newest writing on craft, code, and intentional living.
+          </p>
+        </header>
+
+        <div class="teaser-grid">
+          
+          <!-- Teaser 1 -->
+          <article class="teaser-card">
+            <div class="teaser-card__media">
+              <img src="images/post-1.jpg" alt="A designer workspace with typography posters and Pantone swatches" width="400" height="250" loading="lazy">
+            </div>
+            <div class="teaser-card__body">
+              <div class="teaser-card__meta">
+                <span>Design &amp; Craft</span>
+                <span>•</span>
+                <time datetime="2026-10-12">Oct 12, 2026</time>
+              </div>
+              <h3 class="teaser-card__title">
+                <a href="blog.html">Finding Your Creative Rhythm in a Distracted World</a>
+              </h3>
+              <p class="teaser-card__text">
+                How stepping away from algorithmic feeds and embracing tactile sketchbooks rekindles genuine artistic depth.
+              </p>
+              <div>
+                <a href="blog.html" class="text-link">
+                  <span>Read Article</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Teaser 2 -->
+          <article class="teaser-card">
+            <div class="teaser-card__media">
+              <img src="images/post-2.jpg" alt="Developer laptop displaying clean modern CSS code editor" width="400" height="250" loading="lazy">
+            </div>
+            <div class="teaser-card__body">
+              <div class="teaser-card__meta">
+                <span>Engineering</span>
+                <span>•</span>
+                <time datetime="2026-10-08">Oct 08, 2026</time>
+              </div>
+              <h3 class="teaser-card__title">
+                <a href="blog.html">Why Modern CSS is Pure Magic in 2026</a>
+              </h3>
+              <p class="teaser-card__text">
+                From fluid clamp typography to pure CSS view-timeline scroll animations, discover why stylesheets replace heavy JS.
+              </p>
+              <div>
+                <a href="blog.html" class="text-link">
+                  <span>Read Article</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Teaser 3 -->
+          <article class="teaser-card">
+            <div class="teaser-card__media">
+              <img src="images/post-3.jpg" alt="Aesthetic wooden cafe table in Kyoto with hot matcha latte and leather journal" width="400" height="250" loading="lazy">
+            </div>
+            <div class="teaser-card__body">
+              <div class="teaser-card__meta">
+                <span>Slow Travel</span>
+                <span>•</span>
+                <time datetime="2026-09-29">Sep 29, 2026</time>
+              </div>
+              <h3 class="teaser-card__title">
+                <a href="blog.html">Slow Travel Notes: Reflections from a Kyoto Cafe</a>
+              </h3>
+              <p class="teaser-card__text">
+                Wandering cobblestone alleyways, sipping matcha, and rediscovering the luxury of unhurried morning creativity.
+              </p>
+              <div>
+                <a href="blog.html" class="text-link">
+                  <span>Read Article</span>
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="center-actions">
+          <a href="blog.html" class="btn btn--secondary">
+            <span>View All 4 Featured Stories</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         5. FULL-WIDTH CALL TO ACTION BAND
+         Soft lavender gradient background with high-impact typography.
+         ------------------------------------------------------------------ -->
+    <section class="section cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-banner__inner">
+          <span class="label-caps">Stay Inspired</span>
+          <h2 id="cta-heading" class="cta-banner__title">
+            Join 14,000+ creators who read our <span class="serif-italic">Sunday</span> dispatch.
+          </h2>
+          <p class="cta-banner__text">
+            Every weekend, we send one thoughtfully composed essay, three curated design references, and a fresh perspective on digital living.
+          </p>
+          <a href="contact.html" class="btn btn--primary">
+            <span>Subscribe to The Dispatch</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SHARED SITE FOOTER
+       Identical markup on all 3 pages (Technical Rule 6).
+       Features dark ink background (footer ONLY), wave SVG divider,
+       brand statement, quick links, social chips, and credits.
+       ====================================================================== -->
+  <footer class="site-footer">
+    
+    <!-- Soft Wave SVG Divider at Top of Footer -->
+    <div class="footer-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,32L60,42.7C120,53,240,75,360,74.7C480,75,600,53,720,42.7C840,32,960,32,1080,42.7C1200,53,1320,75,1380,85.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+      </svg>
+    </div>
+
+    <div class="container site-footer__inner">
+      <div class="site-footer__grid">
+        
+        <!-- Col 1: Brand & Editorial Statement -->
+        <div class="footer-col footer-col--brand">
+          <a href="index.html" class="brand-logo footer-brand" aria-label="Lumen - Return to homepage">
+            Lumen<span class="brand-logo__dot">.</span>
+          </a>
+          <p class="footer-tagline">
+            An independent digital publication dedicated to refined visual design, modern front-end craftsmanship, and intentional living.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col footer-col--links">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Social & Communities -->
+        <div class="footer-col footer-col--social">
+          <h4 class="footer-heading">Connect</h4>
+          <p class="footer-social-text">
+            Follow our design experiments and weekly essays:
+          </p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X Twitter">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar: Copyright & Asset Credits -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Lumen. All rights reserved. Handcrafted with semantic HTML5 &amp; pure CSS3.
+        </p>
+        <p>
+          Typography: <a href="https://fonts.google.com/specimen/Instrument+Serif" target="_blank" rel="noopener noreferrer">Instrument Serif</a> &amp; <a href="https://fonts.google.com/specimen/Plus+Jakarta+Sans" target="_blank" rel="noopener noreferrer">Plus Jakarta Sans</a> | Icons: <a href="https://fontawesome.com" target="_blank" rel="noopener noreferrer">Font Awesome 6</a> | Photography: Editorial Studio &amp; Unsplash.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
